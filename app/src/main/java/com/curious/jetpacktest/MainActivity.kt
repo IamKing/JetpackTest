@@ -1,8 +1,10 @@
 package com.curious.jetpacktest
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.viewpager.widget.ViewPager
+import com.curious.jetpacktest.databinding.DataBindingActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -10,6 +12,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val v:ViewPager;
+    }
+
+
+    fun doOnClick(view: View) {
+        R.id.data_bind_btn
+        when (view.id) {
+            R.id.data_bind_btn -> startActivity(Intent(this@MainActivity, DataBindingActivity::class.java))
+        }
     }
 }
