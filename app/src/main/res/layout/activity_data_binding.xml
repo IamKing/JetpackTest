@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <import type="android.view.View" />
         <variable
             name="user"
             type="com.curious.jetpacktest.databinding.User" />
@@ -14,13 +15,34 @@
         android:layout_height="match_parent">
 
         <TextView
+            android:id="@+id/basic_test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{user.firstname, default=FirstName}"
             android:textColor="#000000"
-            android:textSize="20sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/visible_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test Visible"
+            android:visibility="@{user.age>18?View.GONE:View.VISIBLE}"
+            app:layout_constraintEnd_toStartOf="@+id/resource_test"
+            app:layout_constraintStart_toEndOf="@+id/basic_test"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/resource_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@plurals/orangeCount(user.age,user.age)}"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

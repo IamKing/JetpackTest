@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="orangeCount">
+        <item quantity="one">Have an orange</item>
+        <item quantity="other">Have %d oranges</item>
+    </plurals>
+</resources>
