@@ -12,3 +12,8 @@ https://developer.android.com/topic/libraries/support-library/refactor
 ## Data Binding
 一个简单的实例在下面的包下面，更多特性会在整个Jetpack框架学习完以后再追加
 [mainpackage]/databindings/*
+
+
+## Lifecycles
+其他框架都可以与这个无缝配合使用。但需要注意一些细节，参考下面的官方链接<br/>
+https://developer.android.google.cn/topic/libraries/architecture/lifecycle#onStop-and-savedState
