@@ -6,6 +6,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.curious.jetpacktest.databinding.DataBindingActivity
 import com.curious.jetpacktest.lifecycle.LifeCycleActivity
+import com.curious.jetpacktest.livedata.LiveDataActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         when (view.id) {
             R.id.data_bind_btn -> startActivity(Intent(this@MainActivity, DataBindingActivity::class.java))
             R.id.lifecycle_btn -> startActivity(Intent(this@MainActivity, LifeCycleActivity::class.java))
+            R.id.livedata_btn -> startActivity(Intent(this@MainActivity, LiveDataActivity::class.java))
         }
     }
 }
