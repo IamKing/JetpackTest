@@ -22,6 +22,7 @@
         <activity android:name=".databinding.DataBindingActivity"/>
         <activity android:name=".lifecycle.LifeCycleActivity"/>
         <activity android:name=".livedata.LiveDataActivity"/>
+        <activity android:name=".viewmodel.ViewModelActivity"/>
     </application>
 
 </manifest>

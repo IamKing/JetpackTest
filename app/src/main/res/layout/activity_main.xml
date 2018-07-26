@@ -17,22 +17,32 @@
 
 
     <Button
-        android:onClick="doOnClick"
         android:id="@+id/lifecycle_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="doOnClick"
         android:text="LifeCycles"
         app:layout_constraintLeft_toRightOf="@+id/data_bind_btn"
         app:layout_constraintTop_toTopOf="parent" />
 
 
     <Button
-        android:onClick="doOnClick"
         android:id="@+id/livedata_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="doOnClick"
         android:text="LiveData"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data_bind_btn" />
+
+
+    <Button
+        android:id="@+id/viewmodel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="doOnClick"
+        android:text="ViewModel"
+        app:layout_constraintLeft_toRightOf="@+id/livedata_btn"
         app:layout_constraintTop_toBottomOf="@+id/data_bind_btn" />
 
 
