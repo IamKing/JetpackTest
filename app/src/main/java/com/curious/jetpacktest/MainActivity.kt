@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.curious.jetpacktest.databinding.DataBindingActivity
 import com.curious.jetpacktest.lifecycle.LifeCycleActivity
 import com.curious.jetpacktest.livedata.LiveDataActivity
+import com.curious.jetpacktest.room.RoomActivity
 import com.curious.jetpacktest.viewmodel.ViewModelActivity
 
 class MainActivity : AppCompatActivity() {
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
             R.id.lifecycle_btn -> startActivity(Intent(this@MainActivity, LifeCycleActivity::class.java))
             R.id.livedata_btn -> startActivity(Intent(this@MainActivity, LiveDataActivity::class.java))
             R.id.viewmodel_btn -> startActivity(Intent(this@MainActivity, ViewModelActivity::class.java))
+            R.id.room_btn -> startActivity(Intent(this@MainActivity, RoomActivity::class.java))
         }
     }
 }
